@@ -14,9 +14,9 @@ namespace CivCampusExercise_2021.models
         }
 
         public void AddRoom(int capacity, int roomNo) {
-            //TODO: make roomId be the buildingId added to the roomNo as text
+            //TODO: make roomId a string created from buildingId + RoomNo as text
             string roomId = "";
-
+            
             //TODO: fix the below to add the new room to the rooms list
             Rooms.Add(new Room(0, 0, null));
         }

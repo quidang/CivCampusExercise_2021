@@ -79,10 +79,7 @@ namespace CivCampusExercise_2021
             Console.WriteLine("What is the room capacity?");
             int capacity = int.Parse(Console.ReadLine());
 
-            //TODO: make roomId a string created from buildingId + RoomNo
-            string roomId = "";
-
-            //TODO: add a new room to Rooms
+            //TODO: add a new room by calling the AddRoom method from object TD
 
         }
 
