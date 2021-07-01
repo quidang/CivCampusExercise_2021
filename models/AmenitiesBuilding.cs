@@ -1,3 +1,8 @@
+using System.Threading;
+using System.Diagnostics;
+using System;
+using System.Runtime.CompilerServices;
+using System.Globalization;
 namespace CivCampusExercise_2021.models {
     public class AmenitiesBuilding : Building {
 
@@ -10,10 +15,19 @@ namespace CivCampusExercise_2021.models {
 
 
         public AmenitiesBuilding() : base("default") {
-
+            
         }
 
         //TODO: add constructor that initialises the attributes and parent constructor
+
+        public AmenitiesBuilding(string Type, string BuildingId, int OpeningHour, int ClosingHour) : base(BuildingId) {
+            this.Type = Type;
+            this.OpeningHour = OpeningHour;
+            this.ClosingHour = ClosingHour;
+            this.BuildingId = BuildingId;
+        }
+
+
         
     }
 }
